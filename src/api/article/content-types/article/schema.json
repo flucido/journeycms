@@ -33,7 +33,7 @@
         "audios"
       ]
     },
-    "image": {
+    "main_img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

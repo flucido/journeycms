@@ -427,13 +427,13 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::article.article'
     > &
       Schema.Attribute.Private;
+    main_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     published: Schema.Attribute.Date;
     publishedAt: Schema.Attribute.DateTime;
     thubnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
